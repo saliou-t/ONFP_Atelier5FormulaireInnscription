@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>page1</title>
+	<link rel="stylesheet" href="css_page1.css"></head>
+<style>
+	{
+		/*border : 1px solid black;*/
+	}
+</style>
+<body>
+ <div class="blog_principale">
+ 	<table >
+ 		<div class="sous_blog">
+ 			<div class="ligne">
+ 				<h3 style="color :#1d2f4e">Inscription</h3>
+ 				<h5 style="color: gray">Votre chauffeur en un clic !</h5>
+ 			</div>
+ 			<div class="ligne cfb" >
+ 				<button>
+ 					<a href="#">Continuer avec Facebook</a>
+ 				</button>
+ 			</div>
+ 			<div class="ligne ou">
+ 				<p>___________ <span style="position: relative; top: 7px;">OU</span> ___________</p>
+ 			</div>
+ 			<div>
+ 				<form action="">
+ 					<div class="ligne">
+ 					    <label for="">EMAIL</label>
+ 					    <input type="text" id="email" required="" placeholder="exemple@gmail.com">
+ 					</div>
+ 					<div class="ligne">
+ 					    <label for="">MOT DE PASSE</label>
+ 					    <input type="password" id="pwd" required="" placeholder="**********">
+ 					</div>
+ 				</form>
+ 			</div>
+ 			<div class="ligne con">
+ 				<div>
+ 					<h5><a href="#">J'ai déja un compte</a></h5>
+ 				</div>
+ 				<div>
+ 					<button id="inscription1" >
+ 						<a href="">S'inscire ➜</a>
+ 					</button>
+ 				</div>
+ 			</div>
+ 		</div>
+ 		<div class="sous_blog blog2 " id="blog2">
+ 			<div class="ligne">
+ 				<h3 style="color :#1d2f4e">Bienvenue</h3>
+ 				<h5 style="color: gray">Finalisez votre inscription en reseignant les informations manquantes</h5>
+ 			</div>
+ 			<div class="ligne nom_prenom" >
+ 				<form action="" method="POST">
+ 					<div class="prenom">
+ 						<label for="">PRENOM</label>
+ 						<input type="text" id="prenom" required="" placeholder="Prenom">
+ 					</div>
+ 					<div class="nom">
+ 						<label for="">NOM</label>
+ 						<input type="text" id="nom" placeholder="Nom">
+ 					</div>
+ 				</form>
+ 			</div>
+ 			<div class="ligne tel">
+ 				<label for="">TELEPHONE</label>
+ 				<input type="tel" placeholder="77 125 22">
+ 			</div>
+ 			<div class="ligne bottom" style="margin-bottom:-22px;">
+ 				<div class="cpromo">
+ 				   <h5><a href="#" id="cpromo" ><span style="color: black; margin-right: 22px;">🎁</span> Ajouter un code promo :</a> </h5>
+ 				</div>				
+ 				<div  id="input_p">
+ 					<form action="">
+ 						<input type="numero" class="input_p" id="input_p" placeholder="Code...">
+ 					</form>
+ 				</div>
+ 			</div>
+ 			<div class="ligne con">
+ 				<div>
+ 					<h5><a href="#">J'ai déja un compte</a></h5>
+ 				</div>
+ 				<div>
+ 					<button>
+ 						<a href="">S'inscire ➜</a>
+ 					</button>
+ 				</div>
+ 			</div>
+ 		</div>
+ 	</table>
+ 	<script >
+ 		var email = document.getElementById('email');
+ 		var pwd = document.getElementById('pwd');
+
+ 		var code_promo = document.getElementById('cpromo');
+
+ 		code_promo.addEventListener('click', affichier_input());
+ 		function affichier_input(){
+ 			document.getElementById('input_p').style.display= "inline-block";
+ 			// alert('ok')
+ 		}
+
+ 		//gestion du deuxième sous blog
+
+        var inscription1 = document.getElementById('inscription1');
+        inscription1.addEventListener('click', afficher_blog2);
+
+ 		function afficher_blog2(e){
+ 			if (email.validity.valueMissing) {
+ 				email.style.border="2px solid red";
+ 				// e.preventDefault();
+ 			}
+ 			else if (pwd.validity.valueMissing) {
+ 				pwd.style.border="2px solid red";
+                            e.preventDefault();
+ 			}
+ 			else{
+ 			    email.style.border="none";
+ 			    pwd.style.border="none";
+ 			    document.getElementById('blog2').style.display = "inline-block";
+ 			}
+ 		}
+ 	</script>
+ </div>
+</body>
+</html>
