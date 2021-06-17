@@ -1,0 +1,122 @@
+body{
+	padding: 0px 0px;
+}
+.blog_principale{
+	position: absolute;
+	left: 30%;
+	top: 20%;
+}
+.ligne{
+	margin: 20px 20px;
+	padding: 0px 0px;
+	display: block;
+}	
+.sous_blog{
+	background-color: rgba(215,214,216,0.42);
+	width: 290px;
+	display: inline-block;
+	margin-right:100px ;
+	height: auto;
+	padding: 10px 10px;
+}
+.cfb button{
+	background-color: #3b5998;
+	color: white;
+	width: 100%;
+	height: 26px;
+	outline: none;
+}
+
+.cfb a{
+	color: white;
+	text-decoration: none;
+	font-weight: bolder;
+	font-size: 10px;
+	text-align: center;
+	height: 20px;
+}
+a{
+	color: white;
+	text-decoration: none;
+	font-size: 10px;
+	text-align: center;
+}
+con > div > a{
+	color: black;
+}
+label,input{
+	display : block;
+}
+input{
+	width: 100%;
+	height: 20px;
+	outline: none;
+}
+.ou{
+	width: 100%;
+	margin: 0px 10px 0px 0px;
+	text-align: center;
+	font-weight: bolder;
+	color : rgba(29, 47, 78, 0.36);
+}
+input:focus{
+	border: 2px solid #3b5998;
+	box-shadow: 1px 1px 3px 0px;
+	/*border: none;*/
+}
+::placeholder{
+	color : rgba(29, 47, 78, 0.36);
+
+}
+input:hover  ::placeholder{
+/*	color : red;
+*/
+}
+body  label{
+	color: #1d2f4e;
+	font-weight: bolder;
+	font-size: 12px;
+}
+.con div{
+	display: inline-block;
+}
+.con div button{
+	background-color: #3b5998;
+	position: relative;
+	left: 75%;
+	width: 100px;
+	height: 28px;
+	font-weight: bolder;
+}
+.con > div > h5 a {
+	color : gray;
+	font-weight: bolder;
+} 		
+.blog2{
+	/*display: none;*/
+}
+.nom_prenom{
+	width: 100%;
+}
+.prenom,.nom{
+	display: inline-block;
+	width: 117px;
+	margin-right: 12px;
+}
+.cpromo, .input_p{
+	display: inline;
+}
+.input_p{
+	display: none;
+	width: 65px;
+}
+.cpromo > h5 > a{
+	color: black;
+	font-size: 15px;
+}
+.bottom{
+	/*display: inline;*/
+}
+.blog2{
+	display: none;
+}
